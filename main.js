@@ -1,7 +1,7 @@
 let app = new Vue({
   el: "#app",
   data: {
-    emailArr: []
+    emailArr: [],
   },
   methods: {
     request: function () {
