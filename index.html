@@ -7,29 +7,39 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>vue-email-list</title>
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
       body {
         background: #000;
         color: hsl(0, 0%, 95%);
         font-family: monospace;
-        font-size: 3rem;
+        font-size: 2rem;
+        line-height: 3rem;
         white-space: nowrap;
       }
       h1 {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
+        margin-bottom: 30px;
       }
       div {
-        padding-left: 50px;
+        height: 100vh;
+        padding: 50px 100px;
+        border: 30px solid #0f0a13;
+        box-shadow: inset 0 0 100px 50px #0f0a13;
+        overflow: auto;
       }
     </style>
   </head>
   <body>
     <div id="app">
       <h1>Genero 10 email</h1>
-      <div>
-        <ol>
+        <ol v-if="emailArr.length == 10">
           <li v-for="email in emailArr">{{email}}</li>
         </ol>
-      </div>
+        <span v-else>Caricamento...</span>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
