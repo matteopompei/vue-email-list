@@ -36,7 +36,7 @@ h1 {
 ol {
   padding-left: 100px;
   opacity: 0;
-  animation: fade-in 0.5s linear forwards;
+  animation: fade-in 1s linear forwards;
 }
 
 li {
