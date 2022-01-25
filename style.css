@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@keyframes fade-in {
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  cursor: default;
+  background: #000;
+  color: hsl(0, 0%, 95%);
+  font-family: monospace;
+  font-size: 2rem;
+  line-height: 3.5rem;
+  white-space: nowrap;
+}
+
+div {
+  height: 100vh;
+  padding: 50px 100px;
+  border: 30px solid #0f0a13;
+  box-shadow: inset 0 0 100px 50px #0f0a13;
+  overflow: auto;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+ol {
+  padding-left: 100px;
+  opacity: 0;
+  animation: fade-in 0.5s linear forwards;
+}
+
+li {
+  cursor: pointer;
+  transition: margin-left 0.3s;
+}
+
+li:hover {
+  margin-left: 25px;
+}
+
+span {
+  opacity: 0;
+  animation: fade-in 0.2s linear forwards;
+}
